@@ -1,0 +1,69 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; /* ensures swipe works */
+}
+
+
+
+
+.mySwiper2 {
+  width: 100%;
+  height: 450px;   /* main image height */
+}
+
+.mySwiper {
+  width: 100%;
+  height: 120px;   /* thumbnails height */
+  padding-top: 10px;
+}
+
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* VERY IMPORTANT */
+}
+
+button{
+  cursor: pointer;
+}
+button:disabled{
+  cursor: not-allowed;
+}
+input,select,textarea{
+  outline: none;
+  border: 1px solid gray;
+}
